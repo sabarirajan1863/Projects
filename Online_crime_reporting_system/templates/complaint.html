@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>Online Crime Reporting </title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#0099FF;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+table {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 45%;
+}td, th {
+    border: 1px solid #0099FF;
+    text-align: left;
+    padding: 8px;
+}tr:nth-child(even) {
+    background-color:#99CC66;
+}
+h1{
+padding:50px;
+background:#FFFF99;}
+
+h3{
+padding:50px;
+background-color:#0099FF;
+}
+</style>
+
+<script language="javascript">
+            function user_register()
+            {
+              // alert("");
+               
+				if (document.form1.name.value == "")
+                {
+				
+                    alert("Enter the Name");
+                    document.form1.name.focus();
+                    return false;
+                }
+				 if (!/^[a-zA-Z]*$/g.test(document.form1.name.value)) {
+					alert("Invalid characters. Enter  Name..");
+					document.form1.name.focus();
+					return false;
+				}
+				
+				
+						if (document.form1.contact.value == "")
+                {
+                    alert("Enter the Contact");
+                    document.form1.contact.focus();
+                    return false;
+                } 
+                if (document.form1.contact.value != "")
+                {
+                  var z = document.form1.contact.value;
+             if(!/^[0-9]+$/.test(z)){
+   
+        alert("enter 0-9")
+       document.form1.contact.focus();
+        return false;
+        }   
+                }
+                  
+                      
+               if (document.form1.contact.value != "")
+                {
+                   var a=document.form1.contact.value;
+                   if(!(a.length ==10)) //i got a problem with this one i think
+  {
+  alert("Enter  10 character Maximum length");
+    document.form1.contact.focus();
+
+  return false;
+  }
+  
+ 
+                }
+				
+				
+				if (document.form1.email.value == "")
+                {
+                    alert("Enter the email");
+                    document.form1.email.focus();
+                    return false;
+                }
+                if (document.form1.email.value != "")
+                {
+                    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(document.form1.email.value.match(mailformat))  
+{  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+document.form1.email.focus();  
+return false;  
+}  
+                }
+				
+		
+				 
+						
+				 if (document.form1.address.value == "")
+                {
+                    alert("Enter the  Address");
+                    document.form1.address.focus();
+                    return false;
+                }
+				
+				 if (document.form1.uname.value == "")
+                {
+                    alert("Enter the Username");
+                    document.form1.uname.focus();
+                    return false;
+                } 
+               
+               
+                if (document.form1.pass.value == "")
+                {
+                    alert("Enter the Password");
+                    document.form1.pass.focus();
+                    return false;
+                }
+                //finishMD();
+                return true;
+            }
+        </script>
+
+</head>
+{%if result%}
+{{ result }}
+{%endif%}
+<body>
+<h1 align="center">ONLINE CRIME REPORTING</h1>
+<form  name="form1" method="post" action="/complaints">
+<ul><li><a href="/user_home">HOME</a></li>
+<li><a href="/complaints">COMPLAINTS</a></li>
+<li><a href="/crime_complaint">CRIME</a></li>
+<li><a href="/missing_person">MISSING PERSON</a></li>
+<li><a href="/view_status">ALL COMPLAINT STATUS</a></li>
+<li><a href="/">LOGOUT</a></li></ul>
+      <div align="center">
+        <h2>COMPLAINTS</h2>
+  </div>
+      <table width="71%" height="389" border="0" align="center" bordercolor="blue">
+    <tr>
+      <td width="97">Complaint person Name</td>
+      <td width="239">
+        <div align="left">
+          <input type="text" name="name" id="name" required/>
+          </div></td></tr>
+    <tr>
+      <td>Complaint Reason</td>
+      <td><div align="left">
+        <label>
+        <input name="reason" type="text" id="reason">
+        </label>
+      </div></td>
+    </tr>
+    <tr>
+      <td>Complaint Person Address</td>
+      <td>
+        <div align="left">
+          <textarea name="address" id="address"></textarea>
+        </div></td></tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <div align="left">
+          <input type="submit" name="btn" value="Complaint" onClick="return user_register()" />
+          </div></td></tr>
+  </table>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+</form>
+<p align="center"><h3 class="copyr" align="center"> &copy; 2020 . All Rights Reserved | Design by <a href="#" target="_blank">Admin</a></h3></p>
+</body>
+</html>

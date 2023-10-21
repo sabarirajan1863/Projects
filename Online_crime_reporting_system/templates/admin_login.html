@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Online Crime Reporting</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#0099FF;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+body
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+hd {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 150px;
+	line-height: 150px;
+	background-repeat: repeat-x;
+	background-position: left;
+	background-color: #D1DFEC;
+	background-image: url(images/ridesharing_header_367.png);
+}
+sd
+{
+	background-color:#CCCCCC;
+	color:#000000;
+	text-decoration:none;
+	height:30px;
+	line-height:30px;
+	font-weight: bold;
+}
+sd a
+{
+background-color:#CCCCCC;
+color:#000000;
+padding:5px;
+text-decoration:none;
+}
+inp {
+	height: 30px;
+	width: 250px;
+}
+
+sd a:hover
+{
+color:#000000;
+background-color:#99CCFF;
+
+}
+txt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0066CC;
+}style1 {color: #FF0000}
+border {
+	border: 3px solid #006699;
+}
+fd {
+	border: 1px solid #0099CC;
+}
+bg2 {
+	background-color: #DFF4FF;
+}
+bg1 {
+	color: #FFFFFF;
+	background-color: #00509F;
+}
+
+.style1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+h1{
+padding:50px;
+background:#FFFF99;}
+
+h3{
+padding:50px;
+background-color:#0099FF;
+}
+</style>
+</head>
+
+<body>
+{%if msg %}
+{{ msg }}
+{%endif%}
+<h1 align="center" class="style1">ONLINE CRIME REPORTING</h1>
+<form id="form1" name="form1" method="post" action="/admin_login">
+<p><ul><li><a href="/">HOME</a></li>
+   <li><a href="/user_login">USER </a></li>
+    
+
+   <li><a href="/admin_login">ADMIN </a></li></ul>
+      </p>
+
+      <div align="center">
+        <h2>ADMIN LOGIN </h2>
+      </div>
+      <p>&nbsp;</p>
+      <table width="634" height="257" border="0" align="center">
+        <tr>
+          <td><img src="../static/admin.jpg" width="292" height="233"></td>
+          <td><table width="340" height="183" border="0" align="center" cellpadding="5" cellspacing="0" class="border">
+            <tr>
+              <th colspan="2" class="bg1" scope="col">Login</th>
+            </tr>
+            <tr>
+              <td class="bg2">Username</td>
+              <td class="bg2"><input type="text" name="username" /></td>
+            </tr>
+            <tr>
+              <td class="bg2">Password</td>
+              <td class="bg2"><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+              <td class="bg2">&nbsp;</td>
+              <td class="bg2"><input type="submit" name="btn" value="Submit" /></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+</form>
+<p align="center"><h3 class="copyr" align="center"> &copy; 2020 . All Rights Reserved | Design by <a href="#" target="_blank">Admin</a></h3></p>
+</body>
+</html>
