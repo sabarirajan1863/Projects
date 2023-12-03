@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranaa Website</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+
+        /* -----navbar------- */
+
+        .fullhome{
+            background-image: url("pexels-jessica-bryant-1370704.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .logoname{
+            color:rgb(33, 73, 138);
+            font-size:25px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            font-weight: bolder;
+            margin-left: 10px;
+        }
+        .links li a{
+            color:rgb(33, 73, 138);
+            font-weight: bold;
+            letter-spacing: 0px;
+            margin-right: 5px;
+            font-size: 17px;
+        }
+        .links li a:hover{
+            color:rgb(82, 220, 174)
+        }
+        .nav-btn button{
+            color:rgb(33, 73, 138);
+            font-weight:600;
+        }
+
+        /* -----navbar------- */
+
+        /* --------homepage------ */
+
+        .homecontent{
+            width:100%;
+            height:500px;
+            background-color: transparent;
+        }
+        .backgrounddark{
+            background-color: rgba(0, 0, 184, 0.381);
+            height:100%;
+        }
+        .content{
+            width:650px;
+            position:relative;
+            top:80px;
+            left:100px;
+            color:white;
+        }
+        .content h1{
+            color:white;
+            font-size: 50px;
+        }
+        .databackgrounddark{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:30px 40px;
+            margin:auto;
+            color:#fff;
+            font-weight:bold;
+            text-align:center;
+            width:100%;
+            background-color: rgba(0, 0, 184, 0.199);
+            height:100%;
+        }
+        .datas{
+            background-color: rgb(77, 255, 198);
+            height:180px;
+        }
+        .btn{
+            background-color: rgb(0, 222, 152);
+            color:white;
+        }
+        .datas h1{
+            color:rgb(33, 73, 138);
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .data h6{
+            color:white;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* --------homepage------ */
+
+        /* -----------secondpage------- */
+
+        .secondpage{
+            background-color: rgb(24, 55, 104);
+            color:white;
+        }
+        .secondpage h4{
+            text-align: center;
+            padding: 40px;
+        }
+        .firstdiv,.seconddiv{
+            display:flex;
+            width:100%;
+            height:350px;
+        }
+        .firstdiv .points,.seconddiv .points{
+            width:50%;
+            font-size: 20px;
+        }
+        .firstdiv .image,.seconddiv .image{
+            width:50%;
+        }
+        .firstdiv .points h1,.seconddiv .points h1{
+            margin:20px 40px;
+        }
+        .firstdiv .points ul,.seconddiv .points ul{
+            margin:35px 10px;
+            line-height: 40px;
+        }
+        .firstdiv .points ul li,.seconddiv .points ul li {
+            list-style: none;
+        }
+        .firstdiv .points ul li::before,.seconddiv .points ul li::before {
+            content: '';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            background-image: url("/tick-removebg-preview.png");
+            background-size: cover;
+        }
+        .firstdiv img,.seconddiv img{
+            width:100%;
+            height:100%;
+        }
+
+        /* -----------secondpage------- */
+
+        /* --------------thirdpage--------- */
+        .thirdpage{
+            z-index: 3;
+            background-color: #fff;
+        }
+        .thirdpage .container{
+            display: flex;
+            
+        }
+        .bigimage{
+            text-align: center;
+            width:50%;
+        }
+        
+        .bigimage h1{
+            text-align: center;
+        }
+        .thirdcontent{
+            width:50%;
+            padding:20px;
+            padding-top: 30px;
+        }
+        .comfort{
+            color:rgb(24, 55, 104);
+        }
+
+        /* --------------thirdpage--------- */
+
+        /* ----------------fourthpage and fifthpage------------- */
+
+        .fbackgrounddark{
+            height: 300px;
+            background-color: transparent;
+        }
+        .fourthpage{
+            height: 100%;
+            color:white;
+            line-height: 35px;
+            background-color: rgba(0, 0, 0, 0.689);
+        }
+        .fourthpage .btn,.fifthpage .btn{
+            color:rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        .join{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .para{
+            line-height: 23px;
+        }
+        .photo{
+            background-image: url("/pexels-igor-starkov-1693946.jpg");
+            background-size: cover;
+        }
+        .fivebackgrounddark{
+            background-image: url("/pexels-pixabay-259588.jpg");
+            background-size: cover;
+            color:white;
+            height: 300px;
+        }
+        .fifthpage{
+            height: 100%;
+            color:white;
+            line-height: 35px;
+            background-color: rgba(0, 0, 0, 0.689);
+        }
+
+        /* ----------------fourthpage and fifthpage------------- */
+
+        /* ----------------testimonials---------------------- */
+
+        .testimonials h4{
+            font-size: 30px;
+            font-weight:bold;
+        }
+        .firsttest,.secondtest{
+            background-color:rgb(24, 55, 104); 
+            height:300px;
+            color:white;
+            border-right: 7px solid white;
+            border-left:7px solid white;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom:50px ;
+        }
+        .firsttest .para,.secondtest .para{
+            padding-top: 30px;
+            line-height: 30px;
+        }
+        .apos{
+            font-size: 210px;
+            color:aquamarine;
+            position:absolute;
+            top:-120px;
+            left:0px;
+        }
+        .testphoto{
+            position:absolute;
+            top:210px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 18px;
+        }
+        .testphoto img{
+            width:140px;
+            height:140px;
+            border-radius: 50%;
+            margin-right: 50px;
+            border: 6px solid white;
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+        }
+        .para span{
+            color:aquamarine;
+        }
+
+        /* ----------------testimonials---------------------- */
+
+
+        /* --------------------footer--------------------- */
+
+        .footer{
+            background-color: rgb(24, 55, 104);
+
+        }
+        .footer .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .left{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .left p,.footer .right p{
+            color:aquamarine;
+        }
+        
+        .icons i{
+            height:30px;
+            font-size: 200px;
+        }
+
+        /* --------------------footer--------------------- */
+
+    </style>
+</head>
+
+<body>
+    <div class="fullhome">
+
+    <!-- -------------navigation------------- -->
+        
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light p-4">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="/tranaweb.png" alt="" width="120" height="30" class="d-inline-block align-text-center">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto links">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="nav-btn">
+                    <button class="btn">Contact</button>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+    <!-- -------------navigation------------- -->
+
+    <!-- ----------------homepage-------------------- -->
+    
+        <div class="homecontent">
+            <div class="backgrounddark">
+                <div class="content">
+                    <h1>Experience the art of living</h1><br>
+                    <p>We Prouds you with exceptional impressive service and a lifestyle to your problems.We Prouds you with exceptional impressive service and a lifestyle to your problems.</p><br>
+                    <button class="btn">Explore Services</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="datas">
+            <div class="databackgrounddark">
+                <div class="data">
+                    <h1>10+</h1>
+                    <h6>Years of Experience</h6>
+                </div>
+                <div class="data">
+                    <h1>90%</h1>
+                    <h6>Satisfation Rate</h6>
+                </div>
+                <div class="data">
+                    <h1>40+</h1>
+                    <h6>Completed Projects</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------homepage-------------------- -->
+
+    <!-- ------------------secondpage--------------------- -->
+    
+    <div class="secondpage">
+        <div class="container">
+            <h4>What we offer</h4>
+            <div class="firstdiv">
+                <div class="points">
+                    <h1>Property Management</h1>
+                    <ul>
+                        <li>rental property management</li>
+                        <li>Homeowneer association [HOA] management</li>
+                        <li>Tenant screening and leading</li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="/pexels-pixabay-259588.jpg" alt="">
+                </div>
+            </div>
+            <div class="seconddiv">
+                <div class="image">
+                    <img src="/pexels-ksenia-chernaya-5767926.jpg" alt="">
+                </div>
+                <div class="points">
+                    <h1>Apartment maintenance</h1>
+                    <ul>
+                        <li>Repairs and maintenance</li>
+                        <li>Cleaning and sanitation</li>
+                        <li>Security services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------secondpage--------------------- -->
+
+    <!-- ----------------------thirdpage---------------------- -->
+
+    <div class="photo">
+        <div class="thirdpage">
+            <div class="container">
+                <div class="bigimage">
+                    <img src="trana1.png" alt="" width="350" height="310" class="pt-5">
+                </div>
+                <div class="thirdcontent">
+                    <h3>Who we are</h3>
+                    <h3 class="mt-3 comfort">Comfort < < < Care > > > Convenience </h3>
+                    <p class="mt-3">"At tranaa,We're more just a property management and residential solutions provider. We're a team of passionate professionals dedicated to transforming houses into homes and enriching the lives of our clients. Our journey is built on a foundation of [X years] of experience in the industry, and we're committed to delivering top-quality services.we believe in building more than properties; we're here to create vibrant communities. Join our community and be part of something exceptional."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------thirdpage---------------------- -->
+    
+        <!-- /* ----------------fourthpage------------- */ -->
+    
+        <div class="fbackgrounddark">
+            <div class="fourthpage text-center pt-5">
+                <div class="container mt-5">
+                    <h3>For assistance, Reach us any time</h3>
+                    <p>Solve your queries now</p>
+                    <button class="btn btn-lg">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* ----------------fourthpage------------- */ -->
+
+    <!-- -----------------------testimonials--------------------- -->
+
+    <div class="testimonials p-5">
+            <h4 class="text-center">Testimonials</h4>
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <div class="col-5 firsttest p-5 p-5">
+                    <p class="apos">"</p>
+                    <p class="para"> Seamless and stress-free property management. Responsive,professional,and <br><span><h6>a true game-change.</h6></span></p>
+                    <div class="testphoto">
+                        <img src="/WhatsApp Image 2023-11-30 at 10.49.32_42178def.jpg" alt="">
+                        <div class="name">
+                            <p><b>Fatima Fahad,</b></p>
+                            <p>Chennai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 secondtest p-5 p-5">
+                    <p class="apos">"</p>
+                    <p class="para">Outstanding attention to detail and care for our vacation property.<br><span><h6>Highly recommended.</h6></span></p>
+                    <div class="testphoto">
+                        <img src="/WhatsApp Image 2023-11-30 at 10.49.31_6a456ba4.jpg"" alt="">
+                        <div class="name">
+                            <p><b>Ashwin muthu,</b></p>
+                            <p>Delhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+    </div>
+
+    <!-- -----------------------testimonials--------------------- -->
+
+    <!-- /* ----------------fifthpage------------- */ -->
+
+    <div class="fivebackgrounddark">
+        <div class="fifthpage text-center pt-3">
+            <div class="container mt-5 pb-5">
+                <h3 class="join">Join our community</h3>
+                <p class="para">we believe in building more than properties; we're here to create vibrant communities. Join our community and be part of something exceptional.
+                </p>
+                <button class="btn btn-lg">Contact us</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* ----------------fifthpage------------- */ -->
+
+    <!-- ---------------navbar-------------- -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/tranaweb.png" alt="" width="120" height="30" class="d-inline-block align-text-center">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav links">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- ---------------navbar-------------- -->
+      
+    <!-- ---------------footer-------------- -->
+
+            <div class="footer p-5">
+                <div class="container">
+                    <div class="left">
+                        <p>Follow us on</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;font-size: 25px;margin: 10px;"></i>
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;font-size: 25px;margin: 10px;"></i>         
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;font-size: 25px;margin: 10px;"></i>
+                            <i class="fa-solid fa-envelope" style="color: #ffffff;font-size: 25px;margin: 10px;"></i>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p>Mobile number</p>
+                        <p><span><i class="fa-solid fa-phone-volume" style="color: #ffffff;font-size: 25px;margin-left: 10px;margin-right: 10px;"></i></span>+91 0987654321</p>
+                    </div>
+                </div>
+        </div>
+
+    <!-- ---------------footer-------------- -->
+       
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/all.min.js"></script>
+</body>
+</html>
