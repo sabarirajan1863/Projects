@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 100px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+    }
+    .login-form {
+      margin-top: 30px;
+    }
+    .login-btn {
+      background-color: #007bff;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+    .login-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="login-container">
+    <h2 class="text-center">Signup</h2>
+    <form class="login-form" action="" method="POST">
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" id="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password">
+        <span>show password <input type="checkbox"  name="" id="pass" oninput="Showhide()"></span>
+        <script>
+         function Showhide(){
+          let a = document.getElementById("pass")
+          if(a.checked === true){
+            document.getElementById("password").type = "text"
+          }else{
+            document.getElementById("password").type = "password"
+          }
+         }
+        </script>
+      <button type="submit" class="btn btn-primary btn-block login-btn">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
